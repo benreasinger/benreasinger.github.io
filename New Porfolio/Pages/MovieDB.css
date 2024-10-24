@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(7, 7, 7);
+    margin: 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+      margin: 15px;
+  }
+  
+  .card {
+    display: grid;
+    grid-gap: 5px;
+    background-color: rgb(75, 75, 75);
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+    padding: 9px;
+  }
+  
+  .movie-title {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  
+  .movie-year {
+    color: rgb(255, 255, 255);
+  }
+  
+  .movie-meta {
+    color: rgb(255, 255, 255);
+    align-self: end;
+  } 
+  
+  .nav-bar{
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 7px;
+    margin-bottom: 9px;
+  }
+  
+  .app-title {
+    align-self: center;
+  }
+  
+  .buttons {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+  }
+
+  .button {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .search {
+    padding: 10px;
+    border: 10px;
+  }
+
+  .movie-description {
+    color: rgb(255, 255, 255);
+  }
+  .movie-genre {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
