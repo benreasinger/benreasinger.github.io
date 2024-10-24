@@ -1,6 +1,6 @@
 function toggleImage() {
     const image = document.getElementById("toggle-img");
-    if (image.src.includes("Photo1.jpg")) {
+    if (image.src.includes("Photo1.JPG")) {
         image.src = "../assets/Photo2.png";
     }
      else if(image.src.includes("Photo2.png"))  {
@@ -13,6 +13,6 @@ function toggleImage() {
         image.src = "../assets/Photo5.jpg";
      }
      else if(image.src.includes("Photo5.jpg")){
-        image.src = "../assets/Photo1.jpg";
+        image.src = "../assets/Photo1.JPG";
      }
 }
