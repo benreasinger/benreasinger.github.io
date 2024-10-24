@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>My Movie App</title>
+	<link href="MovieDB.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="nav-bar">
+		<div class="app-title" >
+			<img class="Logo" src="../assets/Netflixlogo.png" alt="Logo" width="75" height="60"> 
+			<a class="button" onclick="homeButton()">
+				<img class="Logo" src="../assets/home_button.png" alt="Logo" width="110px" height="40px"> 
+			</a>
+		</div>
+		<div class="buttons">
+			<a class="button" onclick="sortByGenre()">
+				<img class="Logo" src="../assets/by_genre.png" alt="Logo" width="130px" height="35px"> 
+			</a>
+			<a class="button" onclick="sortByYear()">
+				<img class="Logo" src="../assets/by_year.png" alt="Logo" width="120px" height="35px"> 
+			</a>
+			<a class="button" onclick="sortByRating()">
+				<img class="Logo" src="../assets/by_rating.png" alt="Logo" width="120px" height="35px"> 
+			</a>
+			<!-- <button class="button" onclick="sortByYear()">By Year</button> -->
+			<!-- <button class="button" onclick="sortByRating()">By Rating</button> -->
+			<!-- <button class="button" onclick="sortByGenre()">By Genre</button> -->
+			<input class="search" id="search" onkeyup="searchTitles(this.value)" placeholder="Search Movies">
+				
+		</div>
+	</div>
+
+	<div id="results" class="grid-container">
+		<!--Javascript will insert content here...  -->
+	</div>
+	<script src="https://cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+	<script src="../Scripts/MovieDB.js"></script>
+</body>
+
+</html>
